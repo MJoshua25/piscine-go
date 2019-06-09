@@ -1,7 +1,7 @@
-package main
+package printalphabet
 
 import "fmt"
 
-func main()  {
+func printalphabet()  {
 	fmt.Println("abcdefghijklmnopqrstuvwxyz\n")
 }
