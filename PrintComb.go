@@ -1,4 +1,4 @@
-package piscine
+package piscine_go
 
 import "fmt"
 
