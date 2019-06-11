@@ -27,7 +27,10 @@ func printlinea( n,x,y int) {
 }
 
 func Raid1a(x,y int)  {
-	for i:=1;i<=y;i++{
-		printlinea(x,i,y)
+	if x>0 && y>0{
+		for i:=1;i<=y;i++{
+			printlinea(x,i,y)
+		}
 	}
+
 }
