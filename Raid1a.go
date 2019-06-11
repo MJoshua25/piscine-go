@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func printline( n,x,y int) {
+func printlinea( n,x,y int) {
 	if(x == 1 || x==y){
 		fmt.Print("o")
 		for i:= 0; i<n-2 ;i++ {
@@ -28,6 +28,6 @@ func printline( n,x,y int) {
 
 func Raid1a(x,y int)  {
 	for i:=1;i<=y;i++{
-		printline(x,i,y)
+		printlinea(x,i,y)
 	}
 }
