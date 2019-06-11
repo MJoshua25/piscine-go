@@ -36,8 +36,10 @@ func printlineb( n,x,y int) {
 }
 
 func Raid1b(x,y int)  {
-	for i:=1;i<=y;i++{
-		printlineb(x,i,y)
+	if x>0 && y>0{
+		for i:=1;i<=y;i++{
+			printlineb(x,i,y)
+		}
 	}
 }
 

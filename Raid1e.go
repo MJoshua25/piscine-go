@@ -36,7 +36,9 @@ func printlinee( n,x,y int) {
 }
 
 func Raid1e(x,y int)  {
-	for i:=1;i<=y;i++{
-		printlinee(x,i,y)
+	if x>0 && y>0{
+		for i:=1;i<=y;i++{
+			printlinee(x,i,y)
+		}
 	}
 }

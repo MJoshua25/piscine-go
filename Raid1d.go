@@ -27,7 +27,9 @@ func printlined( n,x,y int) {
 }
 
 func Raid1d(x,y int)  {
-	for i:=1;i<=y;i++{
-		printlined(x,i,y)
+	if x>0 && y>0{
+		for i:=1;i<=y;i++{
+			printlined(x,i,y)
+		}
 	}
 }

@@ -36,7 +36,9 @@ func printlinec( n,x,y int) {
 }
 
 func Raid1c(x,y int)  {
-	for i:=1;i<=y;i++{
-		printlinec(x,i,y)
+	if x>0 && y>0{
+		for i:=1;i<=y;i++{
+			printlinec(x,i,y)
+		}
 	}
 }
