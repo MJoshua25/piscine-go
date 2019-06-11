@@ -1,4 +1,4 @@
-package Raid01
+package piscine_go
 
 import (
 	"fmt"
