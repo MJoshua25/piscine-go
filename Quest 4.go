@@ -31,16 +31,26 @@ func RecursiveFactorial(nb int) int{
 }
 
 func IterativePower(nb, power int) int{
-	p:= 1
-	for i:=1; i<=power; i++{
-		p*= nb
+	if power<=0{
+		return 0
+	} else {
+		p := 1
+		for i := 1; i <= power; i++ {
+			p *= nb
+		}
+		if p>2147483647 || p<0 {
+			return 0
+		} else{
+			return p
+		}
 	}
-	return p
 }
 
 func RecursivePower(nb, power int) int{
-	if power<=0{
+	if power<0{
 		return 0
+	}else if power==0{
+		return 1
 	} else {
 		return nb * RecursivePower(nb, power-1)
 	}
