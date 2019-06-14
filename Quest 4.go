@@ -5,14 +5,19 @@ import "math"
 import "fmt"
 
 func IterativeFactorial(nb int) int{
-	s:=0
-	for i:=1; i<=nb; i++{
-		s*= i
-		if s>2147483647 || s<0 {
-			return 0
+	if nb>16{
+		return 0
+	} else {
+		s:=0
+		for i:=1; i<=nb; i++{
+			s*= i
+			if s>2147483647 || s<0 {
+				return 0
+			}
 		}
+		return s
 	}
-	return s
+
 }
 
 func RecursiveFactorial(nb int) int{
