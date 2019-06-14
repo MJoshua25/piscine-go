@@ -5,7 +5,7 @@ import "math"
 import "fmt"
 
 func IterativeFactorial(nb int) int{
-	if nb>16{
+	if nb>16 || nb<0{
 		return 0
 	} else {
 		s:=1
