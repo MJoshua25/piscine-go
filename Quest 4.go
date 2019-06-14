@@ -38,7 +38,7 @@ func IterativePower(nb, power int) int{
 		for i := 1; i <= power; i++ {
 			p *= nb
 		}
-		if p>2147483647 || p<0 {
+		if p>2147483647{
 			return 0
 		} else{
 			return p
