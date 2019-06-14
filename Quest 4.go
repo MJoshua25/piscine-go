@@ -9,7 +9,11 @@ func IterativeFactorial(nb int) int{
 	for i:=1; i<=nb; i++{
 		s*= i
 	}
-	return s
+	if s>2147483647{
+		return 0
+	} else{
+		return s
+	}
 }
 
 func RecursiveFactorial(nb int) int{
