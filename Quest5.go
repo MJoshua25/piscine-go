@@ -78,5 +78,5 @@ func IsUpper(str string) bool {
 }
 
 func IsPrintable(str string) bool {
-	return !strings.Contains(str, "\n")
+	return !strings.Contains(str, string("\x5C"))
 }
