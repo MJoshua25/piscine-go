@@ -78,5 +78,5 @@ func IsUpper(str string) bool {
 }
 
 func IsPrintable(str string) bool {
-	return IsAlpha(str)
+	return !strings.Contains(str, "\n")
 }
