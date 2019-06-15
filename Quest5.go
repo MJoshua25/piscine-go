@@ -1,6 +1,5 @@
 package piscine_go
 
-import "fmt"
 import "strings"
 
 func FirstRune(s string) rune{
