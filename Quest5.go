@@ -9,7 +9,7 @@ func FirstRune(s string) rune{
 
 func NRune(s string, n int) rune{
 	r := []rune(s)
-	return r[n]
+	return r[n-1]
 }
 
 func LastRune(s string) rune{
