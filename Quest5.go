@@ -76,3 +76,7 @@ func IsUpper(str string) bool {
 	}
 	return true
 }
+
+func IsPrintable(str string) bool {
+	return IsAlpha(str)
+}
