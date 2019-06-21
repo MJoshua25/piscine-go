@@ -31,7 +31,7 @@ func ConcatParams(args []string) string {
 }
 
 func SplitWhiteSpaces(str string) []string {
-	return strings.Split(str," ")
+	return strings.Fields(str)
 }
 
 func PrintWordsTables(table []string) {
