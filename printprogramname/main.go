@@ -1,4 +1,4 @@
-package printprogramname
+package main
 
 import (
 	"fmt"
