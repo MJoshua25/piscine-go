@@ -1,5 +1,10 @@
 package piscine_go
 
+import (
+	"fmt"
+	"strings"
+)
+
 func AppendRange(min,max int) []int {
 	var aux [] int
 	for i:=min; i<max; i++{
@@ -19,5 +24,18 @@ func MakeRange(min,max int) []int {
 		}
 		return aux
 	}
+}
 
+func ConcatParams(args []string) string {
+	return strings.Join(args, "\n")
+}
+
+func SplitWhiteSpaces(str string) []string {
+	return strings.Split(str," ")
+}
+
+func PrintWordsTables(table []string) {
+	for _, mot := range table{
+		fmt.Println(mot)
+	}
 }
