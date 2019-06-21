@@ -7,5 +7,5 @@ import (
 
 func main()  {
 	aux := os.Args
-	fmt.Printf(aux[0])
+	fmt.Println(aux[0])
 }
