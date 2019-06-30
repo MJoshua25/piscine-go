@@ -1,7 +1,5 @@
-package piscine_go
+package piscine
 
-func Swap(a *int, b *int)  {
-	aux := *a
-	*a = *b
-	*b = aux
+func Swap(a *int, b *int) {
+	*a, *b = *b, *a
 }

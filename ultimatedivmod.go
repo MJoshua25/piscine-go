@@ -1,10 +1,7 @@
-package piscine_go
+package piscine
 
-func UltimateDivMod(a *int, b *int) {
-                c := *a
-               *a = *a / *b
-                 
-               *b = c % *b
-
-                 
+func UltimateDivMod(div *int, mod *int) {
+	y := *div
+	*div = *div / *mod
+	*mod = y % *mod
 }

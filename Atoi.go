@@ -1,16 +1,13 @@
-package piscine_go
+package piscine
 
 import "strconv"
 
-func BasicAtoi(s string) int{
-	a, _:= strconv.Atoi(s)
-	return a
-}
+func Atoi(s string) int {
+	i, err := strconv.Atoi(s)
 
-func BasicAtoi2(s string) int{
-	return BasicAtoi(s)
-}
-
-func Atoi(s string) int{
-	return BasicAtoi(s)
+	if err == nil {
+		return i
+	} else {
+		return 0
+	}
 }

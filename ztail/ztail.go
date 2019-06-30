@@ -61,6 +61,7 @@ func main() {
 
 	printName := len(files) > 1
 
+	//open files for reading only
 	for j, f := range files {
 		fi, err := os.Open(f)
 		if err != nil {

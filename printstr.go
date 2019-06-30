@@ -1,9 +1,9 @@
-package piscine_go
+package piscine
 
-import (
-	"fmt"
-)
+import "github.com/01-edu/z01"
 
-func PrintStr(str string) {
-           fmt.Print(str)
+func PrintStr(s string) {
+	for _, r := range s {
+		z01.PrintRune(r)
+	}
 }

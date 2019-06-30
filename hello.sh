@@ -1,2 +1,3 @@
-#!/usr/bin/env bash
-echo Hello MJoshua25!
+#! /bin/bash
+
+echo "Hello hverby!"
